@@ -2,7 +2,6 @@ import DefaultLayout from "@/layouts/default";
 import { Card, Image } from "@nextui-org/react";
 import { FaRegStar } from "react-icons/fa";
 
-
 export default function RankingPage() {
 
   interface PlatformItemProps {
@@ -59,7 +58,6 @@ export default function RankingPage() {
       </Card>
     )
   }
-
 
   return (
     <DefaultLayout>

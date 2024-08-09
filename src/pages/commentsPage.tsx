@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/default";
-import { Accordion, AccordionItem, Button, Card } from "@nextui-org/react";
+import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 
 interface ActionCardProps {
   title: string
