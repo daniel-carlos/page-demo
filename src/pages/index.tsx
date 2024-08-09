@@ -9,7 +9,7 @@ interface ActionCardProps {
 
 const ActionCard = ({ title }: ActionCardProps) => {
   return (
-    <Card href="#" className="max-w-sm w-fit p-5">
+    <Card className="max-w-sm w-fit p-5" style={{ height: 130 }}>
       <h6 className="text-1xl font-bold tracking-tight text-gray-900 dark:text-white">
         {title}
       </h6>
@@ -33,7 +33,7 @@ const FeatureAccordion = ({ children, title }: FeatureAccordionProps) => {
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <div className="container mx-auto" style={{ maxWidth: 600 }}>
+      <div className="container mx-auto" style={{ maxWidth: 600, height: 200 }}>
         <section className="action-section items-center gap-4 py-8 md:py-10 flex justify-between">
           <ActionCard title="Criar Comentário" />
           <ActionCard title="Meus Comentários" />

@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
+import { Badge } from "@nextui-org/badge";
 import {
   Navbar as NextUINavbar,
   NavbarBrand,
@@ -60,7 +61,7 @@ export const Navbar = () => {
             V2
           </Link>
         </NavbarBrand>
-        
+
       </NavbarContent>
 
       <NavbarContent
@@ -75,7 +76,9 @@ export const Navbar = () => {
             <DiscordIcon className="text-default-500" />
           </Link> */}
           <Link isExternal href={siteConfig.links.github}>
-            <FaRegBell  className="text-default-500" />
+            <Badge content="5" color="danger">
+              <FaRegBell className="text-default-500" size={22} />
+            </Badge>
           </Link>
           <ThemeSwitch />
         </NavbarItem>
