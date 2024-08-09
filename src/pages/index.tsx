@@ -27,7 +27,7 @@ export default function IndexPage() {
           href="/banner"
           title="nextui.org homepage"
         >
-          <span className="text-default-600">Banenr</span>
+          <span className="text-default-600">Banner</span>
         </Link>
       </div>
     </DefaultLayout>
