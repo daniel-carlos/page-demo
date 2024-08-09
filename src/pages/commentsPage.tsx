@@ -14,7 +14,7 @@ const ActionCard = ({ title }: ActionCardProps) => {
   )
 }
 
-export default function BlogPage() {
+export default function IndexPage() {
   return (
     <DefaultLayout>
       <div className="container mx-auto" style={{ maxWidth: 600, height: 200 }}>
