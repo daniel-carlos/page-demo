@@ -67,7 +67,7 @@ export default function RankingPage() {
           <h2 className="text-2xl text-center">Ranking das Plataformas</h2>
           <p>com base na média das avaliações dos jogadores</p>
         </header>
-        <main className="w-full">
+        <main className="">
           <div className="grid grid-cols-2 gap-4 mx-auto">
             <PlatformList title="Melhores Plataformas" platforms={[
               { platformName: "Plataforma Boa 1", platformRank: 4.98 },
