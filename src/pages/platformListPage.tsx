@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/default";
-import { Card } from "flowbite-react";
+import { Card } from "@nextui-org/react";
 import { FaRegStar } from "react-icons/fa";
 
 
@@ -43,7 +43,7 @@ export default function RankingPage() {
   }
   const PlatformList = ({ title, platforms }: PlatformListProps) => {
     return (
-      <div className="p-4 flex flex-col justify-start shadow-md border-2 rounded-md">
+      <Card className="p-5">
         <div className="mb-4 flex justify-between ">
           <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">{title}</h5>
           <a href="#" className="text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-500">
@@ -55,7 +55,7 @@ export default function RankingPage() {
             {platforms.map((p, i) => <PlatformItem key={i} platformRank={p} />)}
           </ul>
         </div>
-      </div>
+      </Card>
     )
   }
 
