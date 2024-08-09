@@ -2,15 +2,16 @@ import DefaultLayout from "@/layouts/default";
 import { Accordion, AccordionItem, Button, ButtonProps, Card } from "@nextui-org/react";
 
 interface ActionCardProps {
-  title: string
+  title: string,
+  bg: string,
 }
-const ActionCard = ({ title, color, ...rest }: ActionCardProps & ButtonProps) => {
+const ActionCard = ({ title, bg, ...rest }: ActionCardProps & ButtonProps) => {
   return (
-    <Button className="primary p-5 flex-col justify-center" color={color}
-      style={{ height: 130 }} {...rest}>
-      <h5 className="text-1xl font-bold tracking-tight text-gray-900 dark:text-white">
+    <Button className="primary p-5 flex-col justify-center text-white"
+      style={{ height: 130, backgroundImage: `url(/${bg})`, backgroundPosition: "center", backgroundSize: "cover" }} {...rest}>
+      <h4 className="text-1xl text-white font-bold tracking-tight dark:text-white">
         {title}
-      </h5>
+      </h4>
     </Button>
   )
 }
@@ -20,9 +21,9 @@ export default function BlogPage() {
     <DefaultLayout>
       <div className="container mx-auto" style={{ maxWidth: 600, height: 200 }}>
         <section className="action-section items-center gap-2 py-8 flex justify-between">
-          <ActionCard title="Criar Comentário" color="primary" />
-          <ActionCard title="Meus Comentários" color="success" />
-          <ActionCard title="Para sua Plataforma" color="secondary" />
+          <ActionCard title="Criar Comentário" bg="26119320_7171426.jpg" color="primary" />
+          <ActionCard title="Meus Comentários" bg="29018840_7529031.jpg" color="success" />
+          <ActionCard title="Para sua Plataforma" bg="30350388_7629074.jpg" color="secondary" />
         </section>
 
         <section>
